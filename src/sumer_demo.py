@@ -15,3 +15,7 @@ def greet(name: str) -> str:
 def wave(name: str) -> str:
     """Wave hello using :func:`greet`."""
     return f"👋 {greet(name)}"
+
+
+if __name__ == "__main__":
+    print(wave("Graphite"))
