@@ -10,3 +10,8 @@ def greet(name: str) -> str:
     """Return a one-line greeting (implement in PR 1)."""
     print('hello Steve')
     raise NotImplementedError("Replace this body in your first PR, e.g. return f'Hello, {name}!'")
+
+
+def wave(name: str) -> str:
+    """Wave hello using :func:`greet`."""
+    return f"👋 {greet(name)}"
