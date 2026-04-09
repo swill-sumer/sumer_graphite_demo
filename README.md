@@ -45,9 +45,17 @@ gt checkout main
 git pull
 ```
 
-### 1. First PR — add `greet`
+### 1. First PR — implement `greet`
 
-Edit `src/sumer_demo.py` and add a simple function, for example:
+`main` already has a **`greet` stub** that raises `NotImplementedError` so you have a clear edit. **Save the file** after you change it, then confirm Git sees your edit:
+
+```bash
+git diff src/sumer_demo.py
+```
+
+If that prints nothing, your editor hasn’t saved yet (or you’re in the wrong repo). `gt create --all` only commits when there are file changes.
+
+Replace the body with a real greeting, for example:
 
 ```python
 def greet(name: str) -> str:
@@ -146,7 +154,7 @@ This pulls trunk, restacks open branches, and can prompt you to delete merged lo
 
 | Path | Purpose |
 |------|---------|
-| `src/sumer_demo.py` | Tiny module you extend across stacked PRs |
+| `src/sumer_demo.py` | Tiny module with a `greet` stub you implement in PR 1, then extend |
 | `README.md` | This walkthrough |
 
 ---
