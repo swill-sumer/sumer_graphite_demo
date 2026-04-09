@@ -15,3 +15,6 @@ def adios(name: str) -> str:
     """Return a one-line goodbye (implement in PR 2)."""
     print('adios user!')
     raise NotImplementedError("Replace this body in your second PR, e.g. return f'Goodbye, {name}!'")
+
+if __name__ == "__main__":
+    print(adios("Graphite"))
