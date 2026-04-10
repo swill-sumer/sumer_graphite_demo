@@ -15,3 +15,7 @@ def greet(name: str) -> str:
 
 def adios(name:str):
     print('adios world!')
+
+
+if __name__ == "__main__":
+    adios("Graphite")
