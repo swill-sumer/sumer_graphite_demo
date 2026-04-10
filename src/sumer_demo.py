@@ -11,3 +11,7 @@ def greet(name: str) -> str:
     print('hello world!')
     print('It is great to be here!')
     raise NotImplementedError("Replace this body in your first PR, e.g. return f'Hello, {name}!'")
+
+
+def adios(name:str):
+    print('adios world!')
