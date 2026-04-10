@@ -10,3 +10,6 @@ def greet(name: str) -> str:
     """Return a one-line greeting (implement in PR 1)."""
     print('hello world')
     raise NotImplementedError("Replace this body in your first PR, e.g. return f'Hello, {name}!'")
+
+def adios(name: str):
+    print('adios world')
